@@ -1,7 +1,7 @@
 # Rebellion
-![Rebel Alliance Logo](logo.png)
 ##### Party like it's Star Wars: Episode V and you're stranded on the planet Hoth.
 ##### SMS updates for Montgomery County and Lower Merion Township every 15 minutes.
+![Rebel Alliance Logo](logo.png)
 
 ## Usage:
 1. set up your twilio account (free plan probably works)

@@ -35,7 +35,7 @@
         }
         total_affected = total_affected + num_affected;
         total_served = total_served + num_served;
-        if (region === "LOWER MERION TWP") {
+        if (region === "LOWER MORELAND TWP") {
           lm_affected = num_affected;
           lm_served = num_served;
         }
@@ -47,7 +47,7 @@
       return twilio.sendMessage({
         to: "+1" + process.env.TARGET_TEL,
         from: '+14842706601',
-        body: "PECO outage status for " + now + ": Montgomery county " + total_percent + "% operational (" + total_affected + "/" + total_served + "), Lower Merion: " + lm_percent + "% operational (" + lm_affected + "/" + lm_served + ")"
+        body: "PECO outage status for " + now + ": Montgomery county " + total_percent + "% operational (" + total_affected + "/" + total_served + "), Lower Moreland: " + lm_percent + "% operational (" + lm_affected + "/" + lm_served + ")"
       }, function(err, res) {
         return console.log(err);
       });

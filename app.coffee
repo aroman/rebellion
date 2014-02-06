@@ -24,7 +24,7 @@ freakOut = ->
         num_affected = 5
       total_affected = total_affected + num_affected
       total_served = total_served + num_served
-      if region is "LOWER MERION TWP"
+      if region is "LOWER MORELAND TWP"
         lm_affected = num_affected
         lm_served = num_served
       console.log("#{region}: #{num_affected}/#{num_served}")
@@ -35,7 +35,7 @@ freakOut = ->
       {
         to: "+1#{process.env.TARGET_TEL}",
         from: '+14842706601',
-        body: "PECO outage status for #{now}: Montgomery county #{total_percent}% operational (#{total_affected}/#{total_served}), Lower Merion: #{lm_percent}% operational (#{lm_affected}/#{lm_served})"
+        body: "PECO outage status for #{now}: Montgomery county #{total_percent}% operational (#{total_affected}/#{total_served}), Lower Moreland: #{lm_percent}% operational (#{lm_affected}/#{lm_served})"
       }, (err, res) ->
         console.log err
     )

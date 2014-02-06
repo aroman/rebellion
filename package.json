@@ -1,0 +1,30 @@
+{
+  "name": "rebellion",
+  "version": "0.0.0",
+  "description": "Snow outpost updates via SMS",
+  "main": "app.js",
+  "dependencies": {
+    "request": "~2.33.0",
+    "cheerio": "~0.13.1",
+    "twilio": "~1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aroman/rebellion.git"
+  },
+  "keywords": [
+    "sms",
+    "twilio",
+    "node"
+  ],
+  "author": "Avi Romanoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aroman/rebellion/issues"
+  },
+  "homepage": "https://github.com/aroman/rebellion"
+}

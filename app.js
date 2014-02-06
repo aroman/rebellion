@@ -45,7 +45,7 @@
       total_percent = ((1 - (total_affected / total_served)) * 100).toFixed(2);
       lm_percent = ((1 - (lm_affected / lm_served)) * 100).toFixed(2);
       return twilio.sendMessage({
-        to: '+14844316296',
+        to: "+1" + process.env.TARGET_TEL,
         from: '+14842706601',
         body: "PECO outage status for " + now + ": Montgomery county " + total_percent + "% operational (" + total_affected + "/" + total_served + "), Lower Merion: " + lm_percent + "% operational (" + lm_affected + "/" + lm_served + ")"
       }, function(err, res) {
